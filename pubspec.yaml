@@ -1,0 +1,89 @@
+name: e_commerce_n_flutter
+description: "e_commerce_n_flutter."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.3 <4.0.0"
+
+#--------------- PACKAGES ------------------#
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  flutter_localizations:
+    sdk: flutter
+
+  # Utility Packages
+  intl: 0.18.1
+  dartz: ^0.10.1
+  flutter_screenutil: ^5.9.0
+  device_preview: ^1.1.0
+  connectivity_plus: ^6.0.3
+  smooth_page_indicator: ^1.1.0
+
+  
+  # Icons
+  iconsax: ^0.0.8
+  cupertino_icons: ^1.0.2
+
+  # State Management
+  flutter_bloc: ^8.1.5
+  bloc: ^8.1.4
+
+  # Product Specific
+  equatable: ^2.0.5 
+  dio: ^5.4.3+1
+  get_it: ^7.6.7
+  shared_preferences: ^2.2.3
+  
+  
+  
+  #--------------- ./ PACKAGES END ------------------#
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  #--------------- LOCAL ASSETS ------------------#
+  assets:
+    - assets/logos/
+    - assets/langs/ar.json
+    - assets/langs/en.json
+    - assets/icons/brands/
+    - assets/images/content/
+    - assets/images/banners/
+    - assets/images/reviews/
+    - assets/images/products/
+    - assets/icons/categories/
+    - assets/images/animations/
+    - assets/icons/payment_methods/
+    - assets/images/on_boarding_images/
+
+  #------------- END LOCAL ASSETS ----------------#
+
+  #--------------- LOCAL FONTS ------------------#
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 800
+#------------- END LOCAL FONTS ----------------#
